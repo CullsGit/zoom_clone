@@ -14,7 +14,7 @@ const Meeting = ({ params: { id } }: { params: { id: string } }) => {
 
   const { call, isCallLoading } = useGetCallById(id);
 
-  if (!isCallLoading || isCallLoading) return <Loader />;
+  if (!isLoaded || isCallLoading) return <Loader />;
   return (
     <main className="h-screen w-full">
       <StreamCall call={call}>
