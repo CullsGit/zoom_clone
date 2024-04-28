@@ -55,7 +55,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
               type === "ended"
                 ? "/icons/previous.svg"
                 : type === "upcoming"
-                ? "/icons/upcoming.svy"
+                ? "/icons/upcoming.svg"
                 : "/icons/recordings.svg"
             }
             title={
